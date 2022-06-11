@@ -1,0 +1,279 @@
+body,
+body * {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.boton {
+  background-color: white;
+  height: 40px;
+  width: 280px;
+  color: gray;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: auto;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.title, .contact__title, .persons__title, .origintomatoes__title, .descriptiontomatoes__title {
+  font-weight: bolder;
+  margin: 0px 0px 5px 0px;
+  padding: 0px;
+  font-size: x-large;
+}
+
+.description, .origintomatoes, .descriptiontomatoes {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  height: 450px;
+  padding-top: 60px;
+}
+
+.heroe {
+  grid-area: heroe;
+  margin: 0px;
+  padding: 5px;
+  background: #E56353;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  font-size: xx-large;
+}
+.heroe__title {
+  color: #f0a9a1;
+  font-weight: bolder;
+  margin: 0px;
+  padding: 0px;
+  font-size: x-large;
+  font-weight: 400;
+}
+.heroe__text {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.descriptiontomatoes {
+  grid-area: describetomates;
+  padding: 5px;
+  background: grey;
+  padding-bottom: 20px;
+}
+.descriptiontomatoes__title {
+  color: white;
+}
+.descriptiontomatoes__text {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  flex-direction: column;
+  text-align: left;
+  font-size: x-small;
+  color: snow;
+}
+.descriptiontomatoes__img {
+  margin: 0px;
+  padding: 5px;
+  height: 210px;
+  width: 70%;
+}
+
+.origintomatoes {
+  grid-area: origentomates;
+  padding: 0px;
+  background: snow;
+  padding-bottom: 10px;
+}
+.origintomatoes__title {
+  color: black;
+}
+.origintomatoes__text {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  flex-direction: column;
+  text-align: left;
+  font-size: x-small;
+  color: gray;
+  font-weight: 400;
+}
+.origintomatoes__img {
+  margin: 0px;
+  padding: 5px;
+  height: 210px;
+  width: 70%;
+}
+
+.we {
+  padding: 0px;
+  background: #E56353;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  height: 50px;
+  justify-content: center;
+}
+.we__text {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.persons {
+  grid-area: personas;
+  padding: 1px;
+  background: snow;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  height: 320px;
+  padding-top: 15px;
+  word-wrap: break-word;
+  justify-content: center;
+}
+.persons__title {
+  color: gray;
+}
+.persons__text {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  flex-direction: column;
+  text-align: left;
+  font-size: x-small;
+  color: gray;
+  font-weight: 400;
+}
+.persons__img {
+  margin: 0px;
+  padding: 0px;
+  height: 150px;
+  width: 150px;
+}
+
+.contact {
+  padding-top: 7%;
+  background: #E56353;
+  display: flexbox;
+  flex-direction: column;
+  margin: 0px;
+  height: 250px;
+  justify-content: center;
+}
+.contact__title {
+  color: snow;
+}
+
+.img-footer {
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 180px;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "menu" "seccion-principal" "pie-de-pagina";
+}
+
+.header {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.img-logo {
+  height: 30px;
+  width: 120px;
+  padding: 0px;
+  margin: 5px 5px 10px 15px;
+  text-align: left;
+}
+
+nav {
+  margin: 0px;
+  padding: 0px;
+  grid-area: menu;
+  background-color: white;
+  height: 50px;
+}
+nav ul {
+  margin: 0px;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+}
+nav .iconomenu {
+  text-align: right;
+  display: block !important;
+  margin: 2px;
+}
+
+main {
+  grid-area: seccion-principal;
+  padding: 0px;
+  display: flexbox;
+  flex-direction: row;
+  height: 2200px;
+  text-align: center;
+}
+
+footer {
+  grid-area: pie-de-pagina;
+  background: #686963;
+  color: white;
+  padding: 0px;
+  padding-top: 50px;
+  display: inline-block;
+  text-align: center;
+  height: 200px;
+}
+
+@media (min-width: 992px) {
+  div {
+    grid-template-areas: "menu  seccion-principal" "pie-de-pagina seccion-principal";
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  main {
+    grid-template-columns: 1fr 1fr 1f 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+  }
+  nav {
+    height: auto;
+    padding: 25px;
+  }
+  .iconomenu {
+    display: none !important;
+  }
+  .describetomates {
+    height: 480px;
+  }
+  .origentomates {
+    height: 500px;
+    margin-bottom: 10px;
+  }
+  .img-acerca {
+    height: 72%;
+  }
+  .heroe {
+    height: 100px;
+  }
+  footer {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,17 @@
+nav {
+    @include margin-padding(0px, 0px);
+    grid-area: menu;
+    background-color:$color-white;
+    height: 50px;
+    ul {
+      @include margin-padding(0px, 10px);
+      list-style: none;
+      text-align: center;
+    }  
+    .iconomenu {
+      text-align: right;
+      display: block !important;
+      margin: 2px;
+    }
+  
+}

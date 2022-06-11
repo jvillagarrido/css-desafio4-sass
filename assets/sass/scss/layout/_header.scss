@@ -1,0 +1,12 @@
+.header {
+  @include margin-padding(0px, 0px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+.img-logo {
+  @include height-width(30px,120px);
+  padding: 0px; 
+  margin: 5px 5px 10px 15px; 
+  text-align: left;
+}

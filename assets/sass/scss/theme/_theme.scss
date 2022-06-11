@@ -1,0 +1,162 @@
+.title
+{
+  font-weight: bolder;
+  margin: 0px 0px 5px 0px;
+  padding: 0px;
+  font-size: x-large;
+}
+.description {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  height: 450px;
+  padding-top: 60px; 
+}
+
+.heroe {
+  grid-area: heroe;
+  @include margin-padding(0px, 5px);
+  background: $color-jelybeans;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  font-size: xx-large;
+  &__title
+  {
+      color: $color-pastelpink;
+      font-weight: bolder;
+      @include margin-padding(0px, 0px);
+      font-size: x-large;
+      font-weight: 400;
+  }
+  &__text
+      {
+        @include margin-padding(0px, 0px);
+        color: $color-white;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+}
+
+.descriptiontomatoes {
+    grid-area: describetomates;
+    padding: 5px;
+    background: $color-grey;
+    padding-bottom: 20px; 
+    @extend .description;
+    &__title
+    {
+        color: $color-white;
+        @extend .title;
+    }
+    &__text
+    {
+      @include margin-padding(0px, 0px);
+      display: inline-block;
+     flex-direction:column;
+     text-align:left;
+     font-size: x-small;
+     color:$color-snow;
+     }
+        &__img {
+        @include margin-padding(0px, 5px);
+        @include height-width(210px,70%);
+       }    
+   }
+  
+.origintomatoes{
+      grid-area: origentomates;
+      padding: 0px;
+      background: $color-snow;
+      padding-bottom: 10px; 
+      @extend .description;
+      &__title
+      {
+        color: $color-black;
+        @extend .title;
+      }
+      &__text
+      {
+       @include margin-padding(0px, 0px);
+       display: inline-block;
+       flex-direction:column;
+       text-align:left;
+       font-size:x-small;
+       color:$color-gray;
+       font-weight: 400;
+       }
+       &__img {
+        @include margin-padding(0px, 5px);
+        @include height-width(210px,70%);
+       }
+    }
+  
+.we {
+      padding: 0px;
+      background: $color-jelybeans;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      height: 50px;
+      justify-content: center;
+      &__text
+      {
+       @include margin-padding(0px, 0px);
+       color: $color-white;
+       font-weight: bolder;
+       font-size: xx-large;
+      }
+}
+
+.persons{
+    grid-area: personas;
+    padding: 1px;
+    background:$color-snow;
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    height: 320px;
+    padding-top: 15px; 
+    word-wrap:break-word;
+    &__title
+    {
+        color: $color-gray;
+        @extend .title;
+    }
+    &__text
+    {
+      @include margin-padding(0px, 0px);
+      display: inline-block;
+      flex-direction:column;
+      text-align:left;
+      font-size:x-small;
+      color:$color-gray;
+      font-weight: 400;
+     }
+     &__img {
+        @include margin-padding(0px, 0px);
+        @include height-width(150px,150px);
+       }
+      justify-content: center;
+  }
+  
+.contact {
+    padding-top: 7%;
+    background: $color-jelybeans;
+    display: flexbox;
+    flex-direction: column;
+    margin: 0px;
+    height: 250px;
+    justify-content: center;
+    &__title
+    {
+    color: $color-snow;
+    @extend .title;
+     }
+}
+  
+.img-footer {
+  @include margin-padding(0px, 0px);
+  @include height-width(70px,180px);
+}

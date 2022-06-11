@@ -1,0 +1,9 @@
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "menu"
+      "seccion-principal"
+      "pie-de-pagina";
+  }
+  

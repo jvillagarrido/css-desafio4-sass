@@ -1,0 +1,12 @@
+.boton {
+    background-color:$color-white;
+    @include height-width(40px,280px);
+    color: $color-gray;
+    border-radius: 50px;
+    border: 1px solid $color-black;
+    padding: auto;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  
+  

@@ -1,0 +1,41 @@
+@media (min-width: 992px) {
+    div {
+      grid-template-areas:
+        "menu  seccion-principal"
+        "pie-de-pagina seccion-principal";
+      grid-template-columns: 20rem 1fr;
+      grid-template-rows: 1fr auto;
+    }
+  
+    main {
+      grid-template-columns: 1fr 1fr 1f 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      height: auto;
+    }
+  
+    nav {
+      height: auto;
+      padding: 25px;
+    }
+    .iconomenu {
+      display: none !important;
+    }
+    .describetomates {
+      height: 480px;
+     }
+     .origentomates {
+      height: 500px;
+      margin-bottom: 10px;
+     }
+    .img-acerca {
+      height: 72%; 
+     }
+    .heroe {
+      height: 100px;
+    
+   }
+    footer {
+      height:250px;
+     
+    }
+  }
