@@ -134,7 +134,7 @@ body * {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
-  height: 320px;
+  height: 380px;
   padding-top: 15px;
   word-wrap: break-word;
   justify-content: center;
@@ -165,7 +165,7 @@ body * {
   display: flexbox;
   flex-direction: column;
   margin: 0px;
-  height: 250px;
+  height: 350px;
   justify-content: center;
 }
 .contact__title {
@@ -225,7 +225,7 @@ main {
   padding: 0px;
   display: flexbox;
   flex-direction: row;
-  height: 2200px;
+  height: 2300px;
   text-align: center;
 }
 
@@ -272,7 +272,7 @@ footer {
     height: 100px;
   }
   footer {
-    height: 250px;
+    height: 350px;
   }
 }
 
